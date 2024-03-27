@@ -1,6 +1,16 @@
-# JacAi
+# Jac AI (Front-end)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+
+
+## First time
+
+After cloning this repo locally run the following commands to make sure all the packages required for this app have been installed.
+
+Run `npm --version` to check for the npm version. The acceptable version is `10.5.0`
+
+Run `npm install` to install all the required packages. In the event when you run into some errors, remove `package-lock.json` file and the existing `node_modules` folder and then run `npm install --legacy-peer-deps`.
+
 
 ## Development server
 

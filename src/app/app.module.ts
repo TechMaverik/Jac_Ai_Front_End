@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule,  } from '@angular/router';
 import { ButtonModule} from 'primeng/button';
 
+import { LayoutModule } from './layout/layout.module';
+
 
 
 
@@ -19,8 +21,9 @@ import { ButtonModule} from 'primeng/button';
     BrowserAnimationsModule,
     
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
 
+    LayoutModule,
   ],
   bootstrap: [AppComponent],
 })

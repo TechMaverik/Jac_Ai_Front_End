@@ -1,7 +1,7 @@
-# ja-card
+# ja-ui
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Running unit tests
 
-Run `nx test ja-card` to execute the unit tests.
+Run `nx test ja-ui` to execute the unit tests.

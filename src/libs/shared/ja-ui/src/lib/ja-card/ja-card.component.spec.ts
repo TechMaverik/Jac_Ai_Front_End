@@ -7,7 +7,7 @@ describe('JaCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [JaCardComponent],
+      declarations: [JaCardComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(JaCardComponent);

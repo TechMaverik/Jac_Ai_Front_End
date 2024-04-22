@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component';
+import { LayoutComponent } from './core/layout/layout.component';
 
 export const routes: Routes = [
     {
@@ -8,7 +8,7 @@ export const routes: Routes = [
         children: [
             {
                 path: 'dashboard',
-                loadChildren: () => import('./layout/components/dashboard/dashboard.module').then((m) => m.DashboardModule)
+                loadChildren: () => import('./core/layout/components/dashboard/dashboard.module').then((m) => m.DashboardModule)
             },
             {
                 path: '',

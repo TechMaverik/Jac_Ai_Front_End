@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule,  } from '@angular/router';
 import { ButtonModule} from 'primeng/button';
 
-import { LayoutModule } from './layout/layout.module';
+import { LayoutModule } from './core/layout/layout.module';
 
 
 

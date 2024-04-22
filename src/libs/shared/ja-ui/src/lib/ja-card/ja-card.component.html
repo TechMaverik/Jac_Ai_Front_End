@@ -1,1 +1,30 @@
-<p>ja-card works!</p>
+<p-card 
+[header]="header"
+[subheader]="subHeader"
+[style]="customInlineStyles"
+[styleClass]="customClass"
+[id]="id"
+[hidden]="isHidden"
+>
+
+<!-- 
+    Custom template renderer for Card starts.
+    Set useCustomTemplate as true and pass the templates for cardHeaderTemplate, 
+    cardBodyTemplate and cardFooterTemplate to be rendered.
+-->
+<ng-container *ngIf="useCustomTemplate; else defaultTemplate">
+    <ng-container *ngTemplateOutlet="cardHeaderTemplate"></ng-container>
+    
+    <ng-container *ngTemplateOutlet="cardBodyTemplate"></ng-container>
+    
+    <ng-container *ngTemplateOutlet="cardFooterTemplate"></ng-container>
+</ng-container>
+<!-- Custom template renderer for Card ends. -->
+
+<!-- Default template for Card starts -->
+<ng-template #defaultTemplate>
+    <ng-content></ng-content>
+</ng-template>
+<!-- Default template for Card ends -->
+
+</p-card>

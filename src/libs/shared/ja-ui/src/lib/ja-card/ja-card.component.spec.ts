@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { JaCardComponent } from './ja-card.component';
+import { CardModule } from 'primeng/card'
 
 describe('JaCardComponent', () => {
   let component: JaCardComponent;
@@ -8,6 +9,9 @@ describe('JaCardComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [JaCardComponent],
+      imports: [
+        CardModule
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(JaCardComponent);

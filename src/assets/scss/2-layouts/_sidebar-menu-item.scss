@@ -1,0 +1,41 @@
+.sidebar-menu-item-container {
+    padding: 5px 0px 5px 3px;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #3E96F4;
+    }
+
+    i {
+        font-size: 1.25em;
+      }
+
+        .menu-link {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            flex: 0 0 100%;
+            padding: $menu-link-padding-y $menu-link-padding-x;
+            transition: none;
+            outline: none !important;
+            color: inherit; /* blue colors for links too */
+            text-decoration: inherit; /* no underline */
+    
+            .menu-title-icon {
+                margin-right: $menu-icon-space;
+    
+            }
+    
+            .menu-title {
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+            }
+        }
+  
+    
+  }
+  

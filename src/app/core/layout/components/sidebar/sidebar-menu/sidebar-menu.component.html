@@ -1,0 +1,26 @@
+    <div class="sidebar-menu-container" [ngClass]="{'minimized': isMinimized}">
+        <div class="sidebar-menu-header" (click)="toggleSidebar()">
+          <i class="pi pi-shield"></i>
+          <span *ngIf="!isMinimized">JAC_AI</span>
+        </div>
+
+        <div class="sidebar-menu-body">
+            <ng-container *ngFor="let item of menuItems">
+                <ja-sidebar-menu-item [menuItem]="item" [isMinimized]="isMinimized"></ja-sidebar-menu-item>
+            </ng-container>
+        </div>
+        
+
+        <div class="sidebar-menu-footer">
+          <div class="user-avatar">
+            <i class="pi pi-user"></i>
+            <span *ngIf="!isMinimized">{{ userName }}</span>
+          </div>
+          <div class="logout" (click)="logout()">
+            <i class="pi pi-sign-out"></i>
+            <span *ngIf="!isMinimized">Logout</span>
+          </div>
+        </div>
+      </div>
+
+ 

@@ -1,0 +1,67 @@
+  .sidebar-menu-container {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.3s;
+ 
+  
+  &.minimized {
+    width: 60px;
+  }
+  
+  .sidebar-menu-header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .sidebar-menu-header i {
+    font-size: 24px;
+  }
+  
+  .sidebar-menu-header span {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .sidebar-menu-footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-avatar i {
+    font-size: 24px;
+  }
+  
+  .user-avatar span {
+    margin-left: 10px;
+  }
+  
+  .logout {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout i {
+    font-size: 20px;
+  }
+  
+  .logout span {
+    margin-left: 10px;
+  }
+
+}

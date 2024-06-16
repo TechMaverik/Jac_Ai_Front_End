@@ -1,0 +1,14 @@
+.layout-container {
+    display: flex;
+  }
+
+  .main-content {
+    margin-left: 250px;
+    padding: 16px;
+    transition: margin-left 0.3s;
+  }
+  
+  :host ::ng-deep .sidebar-menu-container.minimized + .main-content {
+    margin-left: 60px;
+  }
+  

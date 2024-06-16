@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ja-sidebar-menu-item',
   templateUrl: './sidebar-menu-item.component.html',
-  styleUrl: './sidebar-menu-item.component.scss'
 })
 export class SidebarMenuItemComponent {
-
+  @Input() isMinimized = false;
+  @Input() menuItem =  { label: '', icon: '', path: '' };
 }

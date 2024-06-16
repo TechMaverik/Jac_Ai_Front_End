@@ -1,1 +1,6 @@
-<p>sidebar-menu-item works!</p>
+<div class="sidebar-menu-item-container"> 
+    <i [class]="'pi ' + menuItem.icon"></i>
+    <span *ngIf="!isMinimized">
+        <a href="#">{{menuItem.label}}</a>
+    </span>
+</div>

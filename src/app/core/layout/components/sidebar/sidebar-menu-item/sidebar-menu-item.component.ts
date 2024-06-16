@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SidebarMenuItem } from 'src/app/utils/sidebar.interface';
 
 @Component({
   selector: 'ja-sidebar-menu-item',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SidebarMenuItemComponent {
   @Input() isMinimized = false;
-  @Input() menuItem =  { label: '', icon: '', path: '' };
+  @Input() menuItem: SidebarMenuItem =  { label: '', icon: '', path: '' , disabled: false};
 }

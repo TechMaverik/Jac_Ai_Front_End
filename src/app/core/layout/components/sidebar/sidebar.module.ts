@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
 import { SidebarMenuItemComponent } from './sidebar-menu-item/sidebar-menu-item.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { SidebarMenuItemComponent } from './sidebar-menu-item/sidebar-menu-item.
     SidebarMenuItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     SidebarMenuComponent,

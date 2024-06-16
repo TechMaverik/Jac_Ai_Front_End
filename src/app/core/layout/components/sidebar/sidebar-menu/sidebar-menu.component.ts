@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SidebarMenuItem } from 'src/app/utils/sidebar.interface';
 
 @Component({
   selector: 'ja-sidebar-menu',
@@ -7,11 +8,8 @@ import { Component } from '@angular/core';
 export class SidebarMenuComponent {
   isMinimized = false;
   userName = 'John Doe';
-  menuItems = [
-    { label: 'Home', icon: 'pi-home', path: '' },
-    { label: 'Profile', icon: 'pi-user', path: '' },
-    { label: 'Settings', icon: 'pi-cog', path: '' },
-    { label: 'Help', icon: 'pi-question', path: '' }
+  menuItems: SidebarMenuItem[] = [
+    { label: 'Dashboard', icon: 'pi-home', path: '/web-app/dashboard', disabled: false }
   ];
 
   toggleSidebar() {

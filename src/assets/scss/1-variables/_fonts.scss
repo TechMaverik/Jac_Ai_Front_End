@@ -1,0 +1,36 @@
+$base-font-size: 1em; // 16px
+$body-font-size: $base-font-size; // 16px
+
+$h1-font-size: $base-font-size * 2; // 32px
+$h2-font-size: $base-font-size * 1.5; // 24px
+$h3-font-size: $base-font-size * 1.25; // 20px
+$h4-font-size: $base-font-size * 1.125; // 18px
+
+$caption-font-size: $base-font-size * 0.875; // 14px
+$footnote-font-size: $base-font-size * 0.75; // 12px
+
+* {
+    h1 {
+        font-size: $h1-font-size;
+    }
+    h2 {
+        font-size: $h2-font-size;
+    }
+    h3 {
+        font-size: $h3-font-size;
+    }
+    h4 {
+        font-size: $h4-font-size;
+    }
+
+    p, div {
+        font-size: $base-font-size;
+    }
+} 
+
+$menu-item-padding-y: 0.15rem !default;
+$menu-item-padding-x: 0 !default;
+$menu-link-padding-y: 0.65rem !default;
+$menu-link-padding-x: 1rem !default;
+$menu-icon-size: 2rem !default;
+$menu-icon-space: 0.75rem !default;

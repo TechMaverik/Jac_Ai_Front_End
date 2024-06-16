@@ -1,0 +1,12 @@
+<div class="sidebar-menu-item-container" routerLinkActive="here show"> 
+    <a 
+    class="menu-link {{ menuItem.disabled ? 'menu-item-disabled' : '' }}"
+    [routerLink]="menuItem.path" 
+    routerLinkActive="active">
+        <span class="menu-title-icon">
+            <i [class]="'pi ' + menuItem.icon"></i>
+        </span>
+        <span class="menu-title" *ngIf="!isMinimized">{{ menuItem.label }}</span>
+    </a>
+
+</div>

@@ -27,3 +27,10 @@ $footnote-font-size: $base-font-size * 0.75; // 12px
         font-size: $base-font-size;
     }
 } 
+
+$menu-item-padding-y: 0.15rem !default;
+$menu-item-padding-x: 0 !default;
+$menu-link-padding-y: 0.65rem !default;
+$menu-link-padding-x: 1rem !default;
+$menu-icon-size: 2rem !default;
+$menu-icon-space: 0.75rem !default;

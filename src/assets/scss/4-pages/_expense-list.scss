@@ -1,0 +1,33 @@
+.expense-list-container {
+    padding: 20px;
+    background-color: #EDEEEB;
+  }
+
+  .expense-list-title {
+    font-size: 1.75rem;
+    align-self: center;
+  }
+  
+  .create-new-btn {
+    // float: right;
+    background-color: #3E96F4;
+    color: #FFFFFF;
+  }
+  
+  .expense-card {
+
+    .p-card .p-card-content {
+        padding: 0;
+    }
+  }
+  
+  .expense-header {
+    font-size: 1.2em;
+    color: #165982;
+  }
+  
+  .expense-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  

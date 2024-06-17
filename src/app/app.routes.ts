@@ -15,6 +15,10 @@ export const routes: Routes = [
                 loadChildren: () => import('./core/error-pages/error-pages.module').then((m)=> m.ErrorPagesModule)
             },
             {
+                path: 'expenses',
+                loadChildren: () => import('./journeys/expenses/expenses-journey-loader.module').then((m)=> m.ExpensesJourneyLoaderModule)
+            },
+            {
                 path: '',
                 redirectTo: 'dashboard',
                 pathMatch: 'full'

@@ -9,7 +9,8 @@ export class SidebarMenuComponent {
   isMinimized = false;
   userName = 'John Doe';
   menuItems: SidebarMenuItem[] = [
-    { label: 'Dashboard', icon: 'pi-home', path: '/web-app/dashboard', disabled: false }
+    { label: 'Dashboard', icon: 'pi-home', path: '/web-app/dashboard', disabled: false },
+    { label: 'Expenses', icon: 'pi-wallet', path: '/web-app/expenses', disabled: false }
   ];
 
   toggleSidebar() {

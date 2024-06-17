@@ -1,0 +1,40 @@
+<div class="expense-list-container">
+    <div class="flex justify-content-between">
+        <span class="expense-list-title">Expenses</span>
+        <button pButton type="button" icon="pi pi-plus" label="Create new" class="create-new-btn" (click)="addExpenses()"></button>
+    </div>
+    
+    <div class="expense-card my-3" *ngFor="let expense of expenses">
+
+        <ja-card 
+        [customInlineStyles]="null" 
+        [useCustomTemplate]="true"
+        [cardHeaderTemplate]="cardHeader"
+        [cardBodyTemplate]="cardBody"
+        [cardFooterTemplate]="cardFooter"
+        >
+                
+              <ng-template #cardHeader>
+                <div class="expense-header">{{ expense.name }}</div>
+              </ng-template>
+              
+              <ng-template #cardBody>
+
+                <div class="mt-3">
+                    <div>Description: {{ expense.description }}</div>
+                    <div>Date: {{ expense.date }}</div>
+                    <div>Amount: ${{ expense.amount }}</div>
+                </div>
+                
+              </ng-template>
+              
+              <ng-template #cardFooter>
+                <div class="expense-footer">
+                  <span>{{ expense.isMonthly ? 'Monthly Expense' : 'One-time Expense' }}</span>
+                  <span>{{ expense.isConsumer ? 'Consumer Bill' : 'Non-Consumer Bill' }}</span>
+                </div>
+              </ng-template>
+
+        </ja-card>
+    </div>
+  </div>

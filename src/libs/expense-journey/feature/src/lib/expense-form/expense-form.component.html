@@ -1,0 +1,58 @@
+<div class="expense-form-container">
+    <form (ngSubmit)="onSubmit()" #expenseForm="ngForm">
+      <div class="p-fluid">
+        <div class="p-field">
+          <label for="from">From</label>
+          <input id="from" type="text" pInputText [(ngModel)]="expense.from" name="from" required>
+        </div>
+        <div class="p-field">
+          <label for="to">To</label>
+          <input id="to" type="text" pInputText [(ngModel)]="expense.to" name="to" required>
+        </div>
+        <div class="p-field">
+          <label for="name">Name</label>
+          <input id="name" type="text" pInputText [(ngModel)]="expense.name" name="name" required>
+        </div>
+        <div class="p-field">
+          <label for="description">Description</label>
+          <input id="description" type="text" pInputText [(ngModel)]="expense.description" name="description" required>
+        </div>
+        <div class="p-field">
+          <label for="date">Date</label>
+          <input id="date" type="date" pInputText [(ngModel)]="expense.date" name="date" required>
+        </div>
+        <div class="p-field">
+          <label for="amount">Amount</label>
+          <input id="amount" type="number" pInputText [(ngModel)]="expense.amount" name="amount" required>
+        </div>
+        <div class="p-field">
+          <label>Is Monthly Expense</label>
+          <div class="p-formgroup-inline">
+            <div class="p-field-radiobutton">
+              <p-radioButton name="isMonthly" value="true" [(ngModel)]="expense.isMonthly" inputId="monthly"></p-radioButton>
+              <label for="monthly">Yes</label>
+            </div>
+            <div class="p-field-radiobutton">
+              <p-radioButton name="isMonthly" value="false" [(ngModel)]="expense.isMonthly" inputId="oneTime"></p-radioButton>
+              <label for="oneTime">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="p-field">
+          <label>Is Consumer Bill</label>
+          <div class="p-formgroup-inline">
+            <div class="p-field-radiobutton">
+              <p-radioButton name="isConsumer" value="true" [(ngModel)]="expense.isConsumer" inputId="consumer"></p-radioButton>
+              <label for="consumer">Yes</label>
+            </div>
+            <div class="p-field-radiobutton">
+              <p-radioButton name="isConsumer" value="false" [(ngModel)]="expense.isConsumer" inputId="nonConsumer"></p-radioButton>
+              <label for="nonConsumer">No</label>
+            </div>
+          </div>
+        </div>
+        <button pButton type="submit" label="Submit" class="submit-btn"></button>
+      </div>
+    </form>
+  </div>
+  
